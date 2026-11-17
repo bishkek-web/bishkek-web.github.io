@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Smart Master — ремонт телефонов в Бишкеке</title>
+<meta name="description" content="Сервисный центр Smart Master в Бишкеке (ул. Юнусалиева, 177/2): замена экрана, стекла и корпуса, батареи, разъёма зарядки, ремонт плат. Apple, Samsung, Xiaomi, Honor. Рейтинг 5.0 в 2GIS.">
+<meta property="og:title" content="Smart Master — ремонт телефонов в Бишкеке">
+<meta property="og:description" content="Ремонт телефонов любой сложности · Юнусалиева, 177/2 · 5.0 ★ в 2GIS">
+<meta property="og:image" content="https://bishkek-web.github.io/smart-master/img/og.jpg">
+<meta property="og:url" content="https://bishkek-web.github.io/smart-master/">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--acc:#2563eb;--ink:#0b1220;--muted:#5f6b7c;--bg:#f4f6f9;--line:#e2e7ee;--dark:#0b1220;--tint:color-mix(in srgb,var(--acc) 9%,#fff);--r:16px}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,sans-serif;color:var(--ink);background:#fff;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}a{color:inherit;text-decoration:none}
+.wrap{max-width:1180px;margin:0 auto;padding:0 22px}
+h1,h2,h3{font-family:"Space Grotesk",Inter,sans-serif;letter-spacing:-.025em;line-height:1.08;font-weight:700}
+h2{font-size:clamp(30px,4.2vw,46px);margin:10px 0 14px}
+.kicker{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--acc);background:var(--tint);padding:6px 10px;border-radius:8px}
+.sub{color:var(--muted);font-size:17px;max-width:640px}
+section{padding:90px 0}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:15px 22px;border-radius:12px;font-weight:700;font-size:15px;border:0;cursor:pointer;transition:transform .2s,box-shadow .2s}
+.btn svg{width:19px;height:19px}
+.btn-main{background:var(--acc);color:#fff}.btn-main:hover{transform:translateY(-2px);box-shadow:0 12px 26px color-mix(in srgb,var(--acc) 35%,transparent)}
+.btn-ghost{background:#fff;border:1px solid var(--line);color:var(--ink)}.btn-ghost:hover{border-color:var(--ink)}
+header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.9);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;gap:22px;height:68px}
+.logo{display:flex;align-items:center;gap:10px;font-family:"Space Grotesk",sans-serif;font-weight:700;font-size:21px;white-space:nowrap}
+.logo i{width:34px;height:34px;border-radius:10px;background:var(--ink);color:#fff;display:grid;place-items:center}
+.logo i svg{width:20px;height:20px}
+.nav-links{display:flex;gap:22px;font-size:14px;font-weight:600;color:var(--muted);margin-left:auto}
+.nav-links a:hover{color:var(--ink)}
+.nav-phone{font-weight:700;font-size:14px;white-space:nowrap}
+.lang{display:flex;border:1px solid var(--line);border-radius:10px;overflow:hidden;font-size:12px;font-weight:700}
+.lang button{border:0;background:none;padding:7px 11px;cursor:pointer;color:var(--muted);font:inherit}
+.lang button.on{background:var(--ink);color:#fff}
+@media(max-width:980px){.nav-links,.nav-phone{display:none}.lang{margin-left:auto}}
+.hero{background:linear-gradient(180deg,var(--bg),#fff);padding:60px 0 70px}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
+.status{display:inline-flex;align-items:center;gap:9px;font-size:13px;font-weight:600;background:#fff;border:1px solid var(--line);border-radius:999px;padding:7px 14px}
+.status i{width:9px;height:9px;border-radius:50%;background:#22c55e;box-shadow:0 0 0 4px rgba(34,197,94,.18)}
+.hero h1{font-size:clamp(38px,5.6vw,64px);margin:18px 0 16px}
+.hero h1 em{font-style:normal;color:var(--acc)}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin:26px 0 24px}
+.brands{display:flex;flex-wrap:wrap;gap:8px;list-style:none}
+.brands li{font-size:13px;font-weight:700;border:1px solid var(--line);background:#fff;border-radius:8px;padding:6px 12px}
+.hero-card{position:relative}
+.hero-card img{border-radius:24px;aspect-ratio:1/1.05;object-fit:cover;width:100%}
+.hc{position:absolute;left:16px;right:16px;bottom:16px;background:rgba(11,18,32,.88);backdrop-filter:blur(8px);color:#fff;border-radius:16px;padding:16px 18px;display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.hc b{display:block;font-family:"Space Grotesk",sans-serif;font-size:22px}
+.hc span{font-size:12px;color:#b9c3d3}
+@media(max-width:900px){.hero-grid{grid-template-columns:1fr}.hero{padding-top:30px}}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin-top:40px}
+.tile{border:1px solid var(--line);border-radius:var(--r);padding:24px;display:flex;flex-direction:column;gap:10px;transition:border-color .2s,transform .2s;background:#fff}
+.tile:hover{border-color:var(--acc);transform:translateY(-3px)}
+.tile i{width:46px;height:46px;border-radius:12px;background:var(--tint);color:var(--acc);display:grid;place-items:center}
+.tile i svg{width:25px;height:25px}
+.tile h3{font-size:18px}.tile p{font-size:14px;color:var(--muted)}
+.ba{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:36px;max-width:820px}
+.ba figure{position:relative;border-radius:var(--r);overflow:hidden}
+.ba img{aspect-ratio:4/5;object-fit:cover;width:100%}
+.ba figcaption{position:absolute;left:12px;top:12px;background:var(--ink);color:#fff;font-weight:700;font-size:13px;padding:6px 12px;border-radius:8px}
+.ba figure:last-child figcaption{background:var(--acc)}
+.dark{background:var(--dark);color:#fff}
+.dark .sub{color:#aab5c6}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1px;background:#1f2a3d;border:1px solid #1f2a3d;border-radius:var(--r);overflow:hidden;margin-top:36px}
+.fact{background:var(--dark);padding:26px}
+.fact i{color:color-mix(in srgb,var(--acc) 70%,#fff);display:block;margin-bottom:12px}.fact i svg{width:28px;height:28px}
+.fact b{display:block;font-size:17px;margin-bottom:4px}.fact span{color:#aab5c6;font-size:14px}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:36px}
+.step{background:var(--bg);border-radius:var(--r);padding:24px}
+.step em{font-style:normal;font-family:"Space Grotesk",sans-serif;font-weight:700;color:var(--acc);font-size:14px}
+.step b{display:block;font-size:17px;margin:8px 0 4px}.step span{color:var(--muted);font-size:14px}
+@media(max-width:800px){.steps{grid-template-columns:1fr}}
+.gal{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px;margin-top:36px}
+.gal button{border:0;padding:0;background:none;cursor:zoom-in;border-radius:12px;overflow:hidden;aspect-ratio:1}
+.gal img{width:100%;height:100%;object-fit:cover;transition:transform .5s}.gal button:hover img{transform:scale(1.06)}
+.rvs{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;margin-top:36px}
+.rv{border:1px solid var(--line);border-radius:var(--r);padding:24px;display:flex;flex-direction:column;background:#fff}
+.rv .stars{color:#f59e0b;letter-spacing:2px}
+.rv blockquote{margin:10px 0 16px;flex:1}
+.rv figcaption{display:flex;justify-content:space-between;gap:10px;font-size:13px;color:var(--muted)}
+.rv figcaption b{color:var(--ink)}
+.more{display:inline-block;margin-top:20px;font-weight:700;color:var(--acc)}
+.book{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+form{background:var(--bg);border-radius:20px;padding:28px;display:grid;gap:14px}
+label{display:grid;gap:6px;font-size:13px;font-weight:700;color:var(--muted)}
+input,select{font:inherit;font-size:16px;padding:13px 14px;border:1px solid var(--line);border-radius:12px;background:#fff;color:var(--ink);width:100%}
+input:focus,select:focus{outline:2px solid var(--acc);border-color:transparent}
+.form-note{font-size:12px;color:var(--muted);text-align:center}
+.contact-list{list-style:none;display:grid;gap:16px;margin-top:26px}
+.contact-list>li>a,.contact-list>li>div{display:flex;gap:14px;align-items:flex-start}
+.contact-list svg{width:22px;height:22px;color:var(--acc);flex:none;margin-top:2px}
+.contact-list small{display:block;color:var(--muted);font-size:13px}
+.hours{list-style:none;display:grid;gap:3px;font-size:14px}
+.hours li{display:flex;gap:16px;justify-content:space-between;min-width:220px}
+@media(max-width:860px){.book{grid-template-columns:1fr}.ba{grid-template-columns:1fr 1fr}}
+.map{width:100%;height:360px;border:0;display:block}
+footer{background:var(--dark);color:#8f9bb0;padding:40px 0 110px;font-size:14px}
+.foot{display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px;align-items:center}
+.foot .logo{color:#fff}.foot .logo i{background:var(--acc)}
+.demo{margin-top:22px;padding:13px 16px;border:1px dashed #2a3650;border-radius:10px;font-size:13px}
+.mbar{position:fixed;left:12px;right:12px;bottom:12px;z-index:60;display:none;gap:10px}
+.mbar a{flex:1}.mbar .btn-ghost{box-shadow:0 8px 24px rgba(0,0,0,.15)}
+@media(max-width:700px){.mbar{display:flex}section{padding:64px 0}}
+.lb{position:fixed;inset:0;background:rgba(5,10,20,.95);z-index:100;display:none;align-items:center;justify-content:center;padding:20px}
+.lb.on{display:flex}.lb img{max-height:88vh;max-width:92vw;border-radius:10px}
+.lb button{position:absolute;background:rgba(255,255,255,.12);border:0;color:#fff;width:50px;height:50px;border-radius:50%;font-size:22px;cursor:pointer}
+.lb .x{top:16px;right:16px}.lb .pv{left:14px;top:50%}.lb .nx{right:14px;top:50%}
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .6s,transform .6s}.reveal.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<header id="hdr"><div class="wrap nav">
+  <a href="#top" class="logo"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="6.5" y="2.5" width="11" height="19" rx="2.5"/><path d="M10.5 18.5h3"/></svg></i>Smart Master</a>
+  <nav class="nav-links"><a href="#services"><span data-i="n1">Ремонт</span></a><a href="#why"><span data-i="n2">Почему мы</span></a><a href="#reviews"><span data-i="n3">Отзывы</span></a><a href="#book"><span data-i="n4">Контакты</span></a></nav>
+  <a class="nav-phone" href="tel:+996558399284">+996 558 399 284</a>
+  <div class="lang"><button type="button" data-l="ru" class="on">RU</button><button type="button" data-l="ky">KG</button></div>
+</div></header>
+
+<section class="hero" id="top"><div class="wrap hero-grid">
+  <div>
+    <span class="status"><i></i><span data-i="hk">Ежедневно с 10:00 до 21:00</span></span>
+    <h1><span data-i="h1">Ремонт телефонов <em>любой сложности</em></span></h1>
+    <p data-i="hs" class="sub">Замена экрана, стекла и корпуса, батареи и разъёма зарядки, ремонт плат. Ремонт с гарантией — так указано в описании сервиса.</p>
+    <div class="cta">
+      <a class="btn btn-main wa" href="#" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.4.6-.3.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.7-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.4Z"/></svg><span data-i="c1">Узнать стоимость</span></a>
+      <a class="btn btn-ghost" href="tel:+996558399284"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A17 17 0 0 1 3 5a2 2 0 0 1 2-2"/></svg>+996 558 399 284</a>
+    </div>
+    <ul class="brands"><li>Apple</li><li>Samsung</li><li>Xiaomi</li><li>Honor</li></ul>
+  </div>
+  <div class="hero-card"><img src="img/hero.jpg" alt="Smart Master"><div class="hc"><div><b>5.0★</b><span data-i="hc0">рейтинг 2GIS</span></div><div><b>754</b><span data-i="hc1">оценки</span></div><div><b>10–21</b><span data-i="hc2">ежедневно</span></div></div></div>
+</div></section>
+
+<section id="services" style="padding-top:40px"><div class="wrap">
+  <span class="kicker reveal"><span data-i="sk">Ремонт</span></span>
+  <h2 data-i="st" class="reveal">Что ремонтируем</h2>
+  <p data-i="ss" class="sub reveal">Apple, Samsung, Xiaomi, Honor и другие бренды.</p>
+  <div class="grid"><div class="tile reveal"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="6.5" y="2.5" width="11" height="19" rx="2.5"/><path d="M9 7l5-2M9 12l7-3M10 17l6-3"/></svg></i><h3 data-i="sv0t">Замена стекла и экрана</h3><p data-i="sv0d">По отзыву — экран iPhone X заменили за полчаса.</p></div><div class="tile reveal"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="6.5" y="2.5" width="11" height="19" rx="2.5"/><path d="M10.5 18.5h3"/></svg></i><h3 data-i="sv1t">Замена корпуса и задней крышки</h3><p data-i="sv1d">Как на фото «до/после» ниже.</p></div><div class="tile reveal"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="16" height="10" rx="2"/><path d="M21 10.5v3"/><path d="M6 10v4M9 10v4"/></svg></i><h3 data-i="sv2t">Замена батареи</h3><p data-i="sv2d">Быстро и по приемлемой цене — пишут клиенты.</p></div><div class="tile reveal"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3v5M15 3v5M7 8h10v3a5 5 0 0 1-10 0z"/><path d="M12 16v5"/></svg></i><h3 data-i="sv3t">Разъём зарядки</h3><p data-i="sv3d">Иногда достаточно чистки — мастер скажет честно.</p></div><div class="tile reveal"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="6" width="12" height="12" rx="1"/><rect x="9.5" y="9.5" width="5" height="5"/><path d="M9 3v3M15 3v3M9 18v3M15 18v3M3 9h3M3 15h3M18 9h3M18 15h3"/></svg></i><h3 data-i="sv4t">Ремонт плат</h3><p data-i="sv4d">Пайка и восстановление — на фото работы мастеров.</p></div><div class="tile reveal"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="4.5" y="4.5" width="15" height="10" rx="1"/><path d="M2 18h20l-1.5-3.5h-17z"/></svg></i><h3 data-i="sv5t">iPad и MacBook</h3><p data-i="sv5d">Ремонт планшетов и ноутбуков Apple.</p></div></div>
+  <div class="ba reveal"><figure><img src="img/before.jpg" alt="До ремонта" loading="lazy"><figcaption><span data-i="bf">До</span></figcaption></figure>
+<figure><img src="img/after.jpg" alt="После ремонта" loading="lazy"><figcaption><span data-i="af">После</span></figcaption></figure></div>
+</div></section>
+
+<section class="dark" id="why"><div class="wrap">
+  <span class="kicker reveal"><span data-i="wk">Почему мы</span></span>
+  <h2 data-i="wt" class="reveal">Сервис с рейтингом 5.0</h2>
+  <p data-i="wd" class="sub reveal">754 оценки и почти 700 отзывов в 2GIS. Клиенты пишут про быстрый ремонт, вежливых мастеров и адекватные цены.</p>
+  <div class="facts"><div class="fact reveal"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg></i><b data-i="ft0t">Ремонт с гарантией</b><span data-i="ft0d">Так указано в описании сервиса</span></div><div class="fact reveal"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-7 9 7"/><path d="M5 9.5V20h14V9.5"/><path d="M10 20v-6h4v6"/></svg></i><b data-i="ft1t">Выезд на дом</b><span data-i="ft1d">Указан в карточке 2GIS</span></div><div class="fact reveal"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></i><b data-i="ft2t">Без выходных</b><span data-i="ft2d">С 10:00 до 21:00</span></div><div class="fact reveal"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg></i><b data-i="ft3t">Два филиала</b><span data-i="ft3d">Юнусалиева, 177/2 — и ещё один адрес в 2GIS</span></div></div>
+</div></section>
+
+<section><div class="wrap">
+  <span class="kicker reveal"><span data-i="pk">Как это работает</span></span>
+  <h2 data-i="pt" class="reveal">Три простых шага</h2>
+  <div class="steps"><div class="step reveal"><em>01</em><b data-i="sp0t">Напишите или приходите</b><span data-i="sp0d">Юнусалиева, 177/2, бутик 101S — или вызовите мастера на дом.</span></div><div class="step reveal"><em>02</em><b data-i="sp1t">Диагностика</b><span data-i="sp1d">Мастер найдёт причину и назовёт стоимость.</span></div><div class="step reveal"><em>03</em><b data-i="sp2t">Ремонт</b><span data-i="sp2d">Срок назовём сразу после диагностики.</span></div></div>
+</div></section>
+
+<section style="background:var(--bg)"><div class="wrap">
+  <span class="kicker reveal"><span data-i="gk">Фото</span></span>
+  <h2 data-i="gt" class="reveal">Работы мастеров</h2>
+  <div class="gal" id="gal"></div>
+</div></section>
+
+<section id="reviews"><div class="wrap">
+  <span class="kicker reveal"><span data-i="rk">Отзывы</span></span>
+  <h2 data-i="rt" class="reveal">Что говорят клиенты</h2>
+  <p data-i="rc" class="sub reveal">5.0 — по 754 оценкам в 2GIS</p>
+  <div class="rvs"><figure class="rv reveal"><div class="stars">★★★★★</div><blockquote>«Заехал на ремонт IPhone X, за пол часа сделали экран, все понравилось.»</blockquote><figcaption><b>Sanzhar</b><span>2GIS · июнь 2026</span></figcaption></figure><figure class="rv reveal"><div class="stars">★★★★★</div><blockquote>«Смартфон заряд албай калган болчу … мастер, башкалардай жөн эле жерден алмаштырыш керек, оңдош керек дебей, 5 мүнөттө портту тазалап колго карматты»</blockquote><figcaption><b>Мирлан</b><span>2GIS · январь 2026</span></figcaption></figure><figure class="rv reveal"><div class="stars">★★★★★</div><blockquote>«Телефонумду оңдотуп, абдан ыраазы болдум! Иштерин сапаттуу жана так аткарышат. Тейлөөсү жакшы, кызматкерлери сылык, баалары да ылайыктуу.»</blockquote><figcaption><b>Iliaz</b><span>2GIS · ноябрь 2026</span></figcaption></figure><figure class="rv reveal"><div class="stars">★★★★★</div><blockquote>«Мастер Адилет отлично обслужил, починил мне телефон»</blockquote><figcaption><b>Гульнара</b><span>2GIS · июль 2026</span></figcaption></figure></div>
+  <a class="more" href="https://2gis.kg/bishkek/firm/70000001088746426/tab/reviews" target="_blank" rel="noopener"><span data-i="ra">Все отзывы в 2GIS →</span></a>
+</div></section>
+
+<section id="book" style="background:var(--bg)"><div class="wrap book">
+  <div>
+    <span class="kicker"><span data-i="bk">Заявка</span></span>
+    <h2 data-i="bt">Опишите поломку</h2>
+    <p data-i="bs" class="sub">Заявка откроется в WhatsApp — мастер ответит и подскажет, что делать дальше. Стоимость называем после диагностики.</p>
+    <ul class="contact-list"><li><a href="tel:+996558399284"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A17 17 0 0 1 3 5a2 2 0 0 1 2-2"/></svg><div>+996 558 399 284<small data-i="c_phone">Телефон</small></div></a></li><li><a class="wa" href="#" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 20.5l1.3-4.2A8.5 8.5 0 1 1 8 19.4z"/></svg><div>+996 558 025 055<small>WhatsApp</small></div></a></li><li><a href="mailto:vip.master.2016@gmail.com" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><div>vip.master.2016@gmail.com<small>E-mail</small></div></a></li><li><a href="https://instagram.com/smartmaster.kg" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor"/></svg><div>@smartmaster.kg<small>Instagram</small></div></a></li><li><div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg><div><span data-i="c_addr">ул. Юнусалиева, 177/2</span><small data-i="c_addr2">ТЦ Beta Stores 2, 1 этаж, бутик 101S, 7 мкр</small></div></div></li><li><div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><ul class="hours"><li><span><span data-i="hd0">Ежедневно</span></span><b>10:00–21:00</b></li></ul></div></li></ul>
+  </div>
+  <form id="form" class="reveal">
+  <label><span data-i="fm_name">Ваше имя</span><input name="name" required autocomplete="name"></label>
+  <label><span data-i="fm_phone">Телефон</span><input name="phone" type="tel" autocomplete="tel" placeholder="+996"></label>
+  <label><span data-i="fm_dev">Устройство и модель</span><input name="device" placeholder="iPhone 13, Samsung A54…"></label>
+  <label><span data-i="fm_type">Что случилось</span><select name="type"><option data-i="opt0">Разбит экран / стекло</option><option data-i="opt1">Разбит корпус</option><option data-i="opt2">Батарея</option><option data-i="opt3">Не заряжается</option><option data-i="opt4">Не включается</option><option data-i="opt5">Другое</option></select></label>
+  <button class="btn btn-main" type="submit"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.4.6-.3.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.7-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.4Z"/></svg><span data-i="fm_send">Отправить в WhatsApp</span></button>
+  <p data-i="fm_note" class="form-note">Заявка откроется в WhatsApp — ни к чему не обязывает.</p>
+</form>
+</div></section>
+<iframe class="map" loading="lazy" title="Карта" src="https://www.openstreetmap.org/export/embed.html?bbox=74.6135%2C42.8273%2C74.6295%2C42.8353&layer=mapnik&marker=42.831334%2C74.621525"></iframe>
+<footer><div class="wrap">
+  <div class="foot"><span class="logo"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="6.5" y="2.5" width="11" height="19" rx="2.5"/><path d="M10.5 18.5h3"/></svg></i>Smart Master</span>
+  <a href="https://2gis.kg/bishkek/firm/70000001088746426" target="_blank" rel="noopener"><span data-i="o2">Открыть в 2GIS →</span></a></div>
+  <p data-i="demo" class="demo">Демо-концепт сайта, подготовлен на основе открытых данных 2GIS. Не является официальным сайтом компании — удалим по первой просьбе.</p>
+</div></footer>
+<div class="mbar"><a class="btn btn-ghost" href="tel:+996558399284"><span data-i="mc">Позвонить</span></a><a class="btn btn-main wa" href="#" target="_blank" rel="noopener">WhatsApp</a></div>
+<div class="lb" id="lb"><button class="x" aria-label="Закрыть">✕</button><button class="pv" aria-label="Назад">‹</button><img alt=""><button class="nx" aria-label="Вперёд">›</button></div><script>
+const T={"ru": {"n1": "Ремонт", "n2": "Почему мы", "n3": "Отзывы", "n4": "Контакты", "hc0": "рейтинг 2GIS", "hc1": "оценки", "hc2": "ежедневно", "sv0t": "Замена стекла и экрана", "sv0d": "По отзыву — экран iPhone X заменили за полчаса.", "sv1t": "Замена корпуса и задней крышки", "sv1d": "Как на фото «до/после» ниже.", "sv2t": "Замена батареи", "sv2d": "Быстро и по приемлемой цене — пишут клиенты.", "sv3t": "Разъём зарядки", "sv3d": "Иногда достаточно чистки — мастер скажет честно.", "sv4t": "Ремонт плат", "sv4d": "Пайка и восстановление — на фото работы мастеров.", "sv5t": "iPad и MacBook", "sv5d": "Ремонт планшетов и ноутбуков Apple.", "ft0t": "Ремонт с гарантией", "ft0d": "Так указано в описании сервиса", "ft1t": "Выезд на дом", "ft1d": "Указан в карточке 2GIS", "ft2t": "Без выходных", "ft2d": "С 10:00 до 21:00", "ft3t": "Два филиала", "ft3d": "Юнусалиева, 177/2 — и ещё один адрес в 2GIS", "bf": "До", "af": "После", "sp0t": "Напишите или приходите", "sp0d": "Юнусалиева, 177/2, бутик 101S — или вызовите мастера на дом.", "sp1t": "Диагностика", "sp1d": "Мастер найдёт причину и назовёт стоимость.", "sp2t": "Ремонт", "sp2d": "Срок назовём сразу после диагностики.", "hk": "Ежедневно с 10:00 до 21:00", "h1": "Ремонт телефонов <em>любой сложности</em>", "hs": "Замена экрана, стекла и корпуса, батареи и разъёма зарядки, ремонт плат. Ремонт с гарантией — так указано в описании сервиса.", "c1": "Узнать стоимость", "sk": "Ремонт", "st": "Что ремонтируем", "ss": "Apple, Samsung, Xiaomi, Honor и другие бренды.", "wk": "Почему мы", "wt": "Сервис с рейтингом 5.0", "wd": "754 оценки и почти 700 отзывов в 2GIS. Клиенты пишут про быстрый ремонт, вежливых мастеров и адекватные цены.", "pk": "Как это работает", "pt": "Три простых шага", "gk": "Фото", "gt": "Работы мастеров", "rk": "Отзывы", "rt": "Что говорят клиенты", "rc": "5.0 — по 754 оценкам в 2GIS", "ra": "Все отзывы в 2GIS →", "bk": "Заявка", "bt": "Опишите поломку", "bs": "Заявка откроется в WhatsApp — мастер ответит и подскажет, что делать дальше. Стоимость называем после диагностики.", "c_phone": "Телефон", "c_addr": "ул. Юнусалиева, 177/2", "c_addr2": "ТЦ Beta Stores 2, 1 этаж, бутик 101S, 7 мкр", "hd0": "Ежедневно", "fm_dev": "Устройство и модель", "opt0": "Разбит экран / стекло", "opt1": "Разбит корпус", "opt2": "Батарея", "opt3": "Не заряжается", "opt4": "Не включается", "opt5": "Другое", "fm_name": "Ваше имя", "fm_phone": "Телефон", "fm_type": "Что случилось", "fm_send": "Отправить в WhatsApp", "fm_note": "Заявка откроется в WhatsApp — ни к чему не обязывает.", "o2": "Открыть в 2GIS →", "demo": "Демо-концепт сайта, подготовлен на основе открытых данных 2GIS. Не является официальным сайтом компании — удалим по первой просьбе.", "mc": "Позвонить", "wa_hello": "Здравствуйте! Пишу с сайта Smart Master.", "wa_lead": "Здравствуйте! Заявка с сайта Smart Master."}, "ky": {"n1": "Оңдоо", "n2": "Эмне үчүн биз", "n3": "Пикирлер", "n4": "Байланыш", "hc0": "2GIS рейтинги", "hc1": "баа", "hc2": "күн сайын", "sv0t": "Айнек жана экран алмаштыруу", "sv0d": "Пикир боюнча — iPhone X экранын жарым саатта алмаштырышкан.", "sv1t": "Корпус жана арткы капкак алмаштыруу", "sv1d": "Төмөнкү «чейин/кийин» сүрөтүндөгүдөй.", "sv2t": "Батарея алмаштыруу", "sv2d": "Тез жана ылайыктуу баада — дешет кардарлар.", "sv3t": "Кубаттоо уячасы", "sv3d": "Кээде тазалоо жетиштүү — уста чынын айтат.", "sv4t": "Платаларды оңдоо", "sv4d": "Ширетүү жана калыбына келтирүү — сүрөттө усталардын иштери.", "sv5t": "iPad жана MacBook", "sv5d": "Apple планшеттерин жана ноутбуктарын оңдоо.", "ft0t": "Кепилдиги бар оңдоо", "ft0d": "Сервистин сыпаттамасында ушинтип жазылган", "ft1t": "Үйгө баруу", "ft1d": "2GIS карточкасында көрсөтүлгөн", "ft2t": "Дем алышсыз", "ft2d": "10:00дөн 21:00гө чейин", "ft3t": "Эки филиал", "ft3d": "Юнусалиев, 177/2 — жана 2GISте дагы бир дарек", "bf": "Чейин", "af": "Кийин", "sp0t": "Жазыңыз же келиңиз", "sp0d": "Юнусалиев, 177/2, 101S бутик — же устаны үйгө чакырыңыз.", "sp1t": "Диагностика", "sp1d": "Уста себебин таап, баасын айтат.", "sp2t": "Оңдоо", "sp2d": "Мөөнөтүн диагностикадан кийин дароо айтабыз.", "hk": "Күн сайын 10:00дөн 21:00гө чейин", "h1": "<em>Ар кандай татаалдыктагы</em> телефон оңдоо", "hs": "Экран, айнек жана корпус, батарея жана кубаттоо уячасын алмаштыруу, платаларды оңдоо. Кепилдиги бар оңдоо — сервистин сыпаттамасында ушинтип жазылган.", "c1": "Баасын билүү", "sk": "Оңдоо", "st": "Эмнени оңдойбуз", "ss": "Apple, Samsung, Xiaomi, Honor жана башка бренддер.", "wk": "Эмне үчүн биз", "wt": "5.0 рейтинги бар сервис", "wd": "2GISте 754 баа жана 700гө жакын пикир. Кардарлар тез оңдоо, сылык усталар жана ылайыктуу баалар тууралуу жазышат.", "pk": "Кантип иштейт", "pt": "Үч жөнөкөй кадам", "gk": "Сүрөттөр", "gt": "Усталардын иштери", "rk": "Пикирлер", "rt": "Кардарлар эмне дешет", "rc": "5.0 — 2GISтеги 754 баа боюнча", "ra": "2GISтеги бардык пикирлер →", "bk": "Арыз", "bt": "Бузулууну сүрөттөп бериңиз", "bs": "Арыз WhatsAppта ачылат — уста жооп берип, эмне кылуу керектигин айтат. Баасын диагностикадан кийин айтабыз.", "c_phone": "Телефон", "c_addr": "Юнусалиев көч., 177/2", "c_addr2": "Beta Stores 2 СБ, 1-кабат, 101S бутик, 7-кичи район", "hd0": "Күн сайын", "fm_dev": "Түзмөк жана модели", "opt0": "Экран / айнек сынган", "opt1": "Корпус сынган", "opt2": "Батарея", "opt3": "Кубатталбайт", "opt4": "Күйбөйт", "opt5": "Башка", "fm_name": "Атыңыз", "fm_phone": "Телефон", "fm_type": "Эмне болду", "fm_send": "WhatsAppка жөнөтүү", "fm_note": "Арыз WhatsAppта ачылат — эч нерсеге милдеттендирбейт.", "o2": "2GISте ачуу →", "demo": "Бул 2GISтин ачык маалыматтарынын негизинде даярдалган демо-концепт. Компаниянын расмий сайты эмес — биринчи өтүнүч боюнча өчүрөбүз.", "mc": "Чалуу", "wa_hello": "Саламатсызбы! Smart Master сайтынан жазып жатам.", "wa_lead": "Саламатсызбы! Smart Master сайтынан арыз."}}, WA='996558025055', NAME='Smart Master', NG=13;
+let L='ru';try{L=localStorage.getItem('lang')||'ru'}catch(e){}
+function apply(l){if(!T[l])l='ru';L=l;document.documentElement.lang=l==='ky'?'ky':'ru';
+ document.querySelectorAll('[data-i]').forEach(e=>{const v=T[l][e.dataset.i];if(typeof v==='string')e.innerHTML=v});
+ document.querySelectorAll('[data-ph]').forEach(e=>{const v=T[l][e.dataset.ph];if(v)e.placeholder=v});
+ document.querySelectorAll('.lang button').forEach(b=>b.classList.toggle('on',b.dataset.l===l));
+ document.querySelectorAll('a.wa').forEach(a=>a.href=`https://wa.me/${WA}?text=${encodeURIComponent(T[l].wa_hello)}`);
+ try{localStorage.setItem('lang',l)}catch(e){}}
+document.querySelectorAll('.lang button').forEach(b=>b.onclick=()=>apply(b.dataset.l));
+apply(L);
+const form=document.getElementById('form');
+if(form)form.addEventListener('submit',e=>{e.preventDefault();
+ const lines=[T[L].wa_lead];
+ form.querySelectorAll('[name]').forEach(el=>{if(!el.value)return;const lab=el.closest('label').querySelector('[data-i]');lines.push(`${lab?lab.textContent.replace(/\s*\(.*\)$/,''):el.name}: ${el.value}`)});
+ window.open(`https://wa.me/${WA}?text=${encodeURIComponent(lines.join('\n'))}`,'_blank');});
+const imgs=[...Array(NG)].map((_,i)=>`img/g-${String(i+1).padStart(2,'0')}.jpg`);
+const gal=document.getElementById('gal');
+if(gal)imgs.forEach((src,i)=>{const b=document.createElement('button');b.type='button';b.innerHTML=`<img src="${src}" loading="lazy" alt="${NAME} — фото ${i+1}">`;b.onclick=()=>open(i);gal.appendChild(b)});
+const lb=document.getElementById('lb'),lbi=lb.querySelector('img');let cur=0;
+function open(i){cur=(i+imgs.length)%imgs.length;lbi.src=imgs[cur];lb.classList.add('on')}
+lb.querySelector('.x').onclick=()=>lb.classList.remove('on');
+lb.querySelector('.pv').onclick=e=>{e.stopPropagation();open(cur-1)};
+lb.querySelector('.nx').onclick=e=>{e.stopPropagation();open(cur+1)};
+lb.onclick=e=>{if(e.target===lb)lb.classList.remove('on')};
+addEventListener('keydown',e=>{if(!lb.classList.contains('on'))return;if(e.key==='Escape')lb.classList.remove('on');if(e.key==='ArrowLeft')open(cur-1);if(e.key==='ArrowRight')open(cur+1)});
+const h=document.getElementById('hdr');addEventListener('scroll',()=>h.classList.toggle('solid',scrollY>40),{passive:true});
+const io=new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}}),{threshold:.1});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>

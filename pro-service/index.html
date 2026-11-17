@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pro Service Bishkek — ремонт ноутбуков и техники 24/7</title>
+<meta name="description" content="Pro Service Bishkek (ул. Ахматбека Суюмбаева, 31): круглосуточный ремонт ноутбуков и компьютеров, восстановление данных, оргтехника, дроны, самокаты. Выезд на дом и доставка.">
+<meta property="og:title" content="Pro Service Bishkek — ремонт ноутбуков и техники 24/7">
+<meta property="og:description" content="Ремонт ноутбуков и техники круглосуточно · Суюмбаева, 31 · 2GIS">
+<meta property="og:image" content="https://bishkek-web.github.io/pro-service/img/og.jpg">
+<meta property="og:url" content="https://bishkek-web.github.io/pro-service/">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--acc:#0b7fbf;--ink:#0b1220;--muted:#5f6b7c;--bg:#f4f6f9;--line:#e2e7ee;--dark:#0b1220;--tint:color-mix(in srgb,var(--acc) 9%,#fff);--r:16px}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,sans-serif;color:var(--ink);background:#fff;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}a{color:inherit;text-decoration:none}
+.wrap{max-width:1180px;margin:0 auto;padding:0 22px}
+h1,h2,h3{font-family:"Space Grotesk",Inter,sans-serif;letter-spacing:-.025em;line-height:1.08;font-weight:700}
+h2{font-size:clamp(30px,4.2vw,46px);margin:10px 0 14px}
+.kicker{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--acc);background:var(--tint);padding:6px 10px;border-radius:8px}
+.sub{color:var(--muted);font-size:17px;max-width:640px}
+section{padding:90px 0}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:15px 22px;border-radius:12px;font-weight:700;font-size:15px;border:0;cursor:pointer;transition:transform .2s,box-shadow .2s}
+.btn svg{width:19px;height:19px}
+.btn-main{background:var(--acc);color:#fff}.btn-main:hover{transform:translateY(-2px);box-shadow:0 12px 26px color-mix(in srgb,var(--acc) 35%,transparent)}
+.btn-ghost{background:#fff;border:1px solid var(--line);color:var(--ink)}.btn-ghost:hover{border-color:var(--ink)}
+header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.9);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;gap:22px;height:68px}
+.logo{display:flex;align-items:center;gap:10px;font-family:"Space Grotesk",sans-serif;font-weight:700;font-size:21px;white-space:nowrap}
+.logo i{width:34px;height:34px;border-radius:10px;background:var(--ink);color:#fff;display:grid;place-items:center}
+.logo i svg{width:20px;height:20px}
+.nav-links{display:flex;gap:22px;font-size:14px;font-weight:600;color:var(--muted);margin-left:auto}
+.nav-links a:hover{color:var(--ink)}
+.nav-phone{font-weight:700;font-size:14px;white-space:nowrap}
+.lang{display:flex;border:1px solid var(--line);border-radius:10px;overflow:hidden;font-size:12px;font-weight:700}
+.lang button{border:0;background:none;padding:7px 11px;cursor:pointer;color:var(--muted);font:inherit}
+.lang button.on{background:var(--ink);color:#fff}
+@media(max-width:980px){.nav-links,.nav-phone{display:none}.lang{margin-left:auto}}
+.hero{background:linear-gradient(180deg,var(--bg),#fff);padding:60px 0 70px}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
+.status{display:inline-flex;align-items:center;gap:9px;font-size:13px;font-weight:600;background:#fff;border:1px solid var(--line);border-radius:999px;padding:7px 14px}
+.status i{width:9px;height:9px;border-radius:50%;background:#22c55e;box-shadow:0 0 0 4px rgba(34,197,94,.18)}
+.hero h1{font-size:clamp(38px,5.6vw,64px);margin:18px 0 16px}
+.hero h1 em{font-style:normal;color:var(--acc)}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin:26px 0 24px}
+.brands{display:flex;flex-wrap:wrap;gap:8px;list-style:none}
+.brands li{font-size:13px;font-weight:700;border:1px solid var(--line);background:#fff;border-radius:8px;padding:6px 12px}
+.hero-card{position:relative}
+.hero-card img{border-radius:24px;aspect-ratio:1/1.05;object-fit:cover;width:100%}
+.hc{position:absolute;left:16px;right:16px;bottom:16px;background:rgba(11,18,32,.88);backdrop-filter:blur(8px);color:#fff;border-radius:16px;padding:16px 18px;display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.hc b{display:block;font-family:"Space Grotesk",sans-serif;font-size:22px}
+.hc span{font-size:12px;color:#b9c3d3}
+@media(max-width:900px){.hero-grid{grid-template-columns:1fr}.hero{padding-top:30px}}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin-top:40px}
+.tile{border:1px solid var(--line);border-radius:var(--r);padding:24px;display:flex;flex-direction:column;gap:10px;transition:border-color .2s,transform .2s;background:#fff}
+.tile:hover{border-color:var(--acc);transform:translateY(-3px)}
+.tile i{width:46px;height:46px;border-radius:12px;background:var(--tint);color:var(--acc);display:grid;place-items:center}
+.tile i svg{width:25px;height:25px}
+.tile h3{font-size:18px}.tile p{font-size:14px;color:var(--muted)}
+.ba{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:36px;max-width:820px}
+.ba figure{position:relative;border-radius:var(--r);overflow:hidden}
+.ba img{aspect-ratio:4/5;object-fit:cover;width:100%}
+.ba figcaption{position:absolute;left:12px;top:12px;background:var(--ink);color:#fff;font-weight:700;font-size:13px;padding:6px 12px;border-radius:8px}
+.ba figure:last-child figcaption{background:var(--acc)}
+.dark{background:var(--dark);color:#fff}
+.dark .sub{color:#aab5c6}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1px;background:#1f2a3d;border:1px solid #1f2a3d;border-radius:var(--r);overflow:hidden;margin-top:36px}
+.fact{background:var(--dark);padding:26px}
+.fact i{color:color-mix(in srgb,var(--acc) 70%,#fff);display:block;margin-bottom:12px}.fact i svg{width:28px;height:28px}
+.fact b{display:block;font-size:17px;margin-bottom:4px}.fact span{color:#aab5c6;font-size:14px}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:36px}
+.step{background:var(--bg);border-radius:var(--r);padding:24px}
+.step em{font-style:normal;font-family:"Space Grotesk",sans-serif;font-weight:700;color:var(--acc);font-size:14px}
+.step b{display:block;font-size:17px;margin:8px 0 4px}.step span{color:var(--muted);font-size:14px}
+@media(max-width:800px){.steps{grid-template-columns:1fr}}
+.gal{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px;margin-top:36px}
+.gal button{border:0;padding:0;background:none;cursor:zoom-in;border-radius:12px;overflow:hidden;aspect-ratio:1}
+.gal img{width:100%;height:100%;object-fit:cover;transition:transform .5s}.gal button:hover img{transform:scale(1.06)}
+.rvs{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;margin-top:36px}
+.rv{border:1px solid var(--line);border-radius:var(--r);padding:24px;display:flex;flex-direction:column;background:#fff}
+.rv .stars{color:#f59e0b;letter-spacing:2px}
+.rv blockquote{margin:10px 0 16px;flex:1}
+.rv figcaption{display:flex;justify-content:space-between;gap:10px;font-size:13px;color:var(--muted)}
+.rv figcaption b{color:var(--ink)}
+.more{display:inline-block;margin-top:20px;font-weight:700;color:var(--acc)}
+.book{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+form{background:var(--bg);border-radius:20px;padding:28px;display:grid;gap:14px}
+label{display:grid;gap:6px;font-size:13px;font-weight:700;color:var(--muted)}
+input,select{font:inherit;font-size:16px;padding:13px 14px;border:1px solid var(--line);border-radius:12px;background:#fff;color:var(--ink);width:100%}
+input:focus,select:focus{outline:2px solid var(--acc);border-color:transparent}
+.form-note{font-size:12px;color:var(--muted);text-align:center}
+.contact-list{list-style:none;display:grid;gap:16px;margin-top:26px}
+.contact-list>li>a,.contact-list>li>div{display:flex;gap:14px;align-items:flex-start}
+.contact-list svg{width:22px;height:22px;color:var(--acc);flex:none;margin-top:2px}
+.contact-list small{display:block;color:var(--muted);font-size:13px}
+.hours{list-style:none;display:grid;gap:3px;font-size:14px}
+.hours li{display:flex;gap:16px;justify-content:space-between;min-width:220px}
+@media(max-width:860px){.book{grid-template-columns:1fr}.ba{grid-template-columns:1fr 1fr}}
+.map{width:100%;height:360px;border:0;display:block}
+footer{background:var(--dark);color:#8f9bb0;padding:40px 0 110px;font-size:14px}
+.foot{display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px;align-items:center}
+.foot .logo{color:#fff}.foot .logo i{background:var(--acc)}
+.demo{margin-top:22px;padding:13px 16px;border:1px dashed #2a3650;border-radius:10px;font-size:13px}
+.mbar{position:fixed;left:12px;right:12px;bottom:12px;z-index:60;display:none;gap:10px}
+.mbar a{flex:1}.mbar .btn-ghost{box-shadow:0 8px 24px rgba(0,0,0,.15)}
+@media(max-width:700px){.mbar{display:flex}section{padding:64px 0}}
+.lb{position:fixed;inset:0;background:rgba(5,10,20,.95);z-index:100;display:none;align-items:center;justify-content:center;padding:20px}
+.lb.on{display:flex}.lb img{max-height:88vh;max-width:92vw;border-radius:10px}
+.lb button{position:absolute;background:rgba(255,255,255,.12);border:0;color:#fff;width:50px;height:50px;border-radius:50%;font-size:22px;cursor:pointer}
+.lb .x{top:16px;right:16px}.lb .pv{left:14px;top:50%}.lb .nx{right:14px;top:50%}
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .6s,transform .6s}.reveal.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<header id="hdr"><div class="wrap nav">
+  <a href="#top" class="logo"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="4.5" y="4.5" width="15" height="10" rx="1"/><path d="M2 18h20l-1.5-3.5h-17z"/></svg></i>Pro Service</a>
+  <nav class="nav-links"><a href="#services"><span data-i="n1">Ремонт</span></a><a href="#why"><span data-i="n2">Почему мы</span></a><a href="#reviews"><span data-i="n3">Отзывы</span></a><a href="#book"><span data-i="n4">Контакты</span></a></nav>
+  <a class="nav-phone" href="tel:+996998000234">+996 998 000 234</a>
+  <div class="lang"><button type="button" data-l="ru" class="on">RU</button><button type="button" data-l="ky">KG</button></div>
+</div></header>
+
+<section class="hero" id="top"><div class="wrap hero-grid">
+  <div>
+    <span class="status"><i></i><span data-i="hk">Работаем круглосуточно</span></span>
+    <h1><span data-i="h1">Ремонт ноутбуков и техники <em>24/7</em></span></h1>
+    <p data-i="hs" class="sub">Ноутбуки и компьютеры, восстановление данных, оргтехника, дроны и самокаты. Выезд на дом и доставка.</p>
+    <div class="cta">
+      <a class="btn btn-main wa" href="#" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.4.6-.3.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.7-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.4Z"/></svg><span data-i="c1">Описать поломку</span></a>
+      <a class="btn btn-ghost" href="tel:+996998000234"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A17 17 0 0 1 3 5a2 2 0 0 1 2-2"/></svg>+996 998 000 234</a>
+    </div>
+    <ul class="brands"><li>Ноутбуки</li><li>ПК</li><li>Принтеры</li><li>Дроны</li><li>Самокаты</li></ul>
+  </div>
+  <div class="hero-card"><img src="img/hero.jpg" alt="Pro Service"><div class="hc"><div><b>24/7</b><span data-i="hc0">круглосуточно</span></div><div><b>4.7★</b><span data-i="hc1">рейтинг 2GIS</span></div><div><b>379</b><span data-i="hc2">оценок</span></div></div></div>
+</div></section>
+
+<section id="services" style="padding-top:40px"><div class="wrap">
+  <span class="kicker reveal"><span data-i="sk">Ремонт</span></span>
+  <h2 data-i="st" class="reveal">Что ремонтируем</h2>
+  <p data-i="ss" class="sub reveal">От ноутбука до детского электромобиля.</p>
+  <div class="grid"><div class="tile reveal"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="4.5" y="4.5" width="15" height="10" rx="1"/><path d="M2 18h20l-1.5-3.5h-17z"/></svg></i><h3 data-i="sv0t">Ноутбуки и ПК</h3><p data-i="sv0d">Ремонт, апгрейд, восстановление после залития.</p></div><div class="tile reveal"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5.5" rx="7" ry="2.5"/><path d="M5 5.5v13c0 1.4 3.1 2.5 7 2.5s7-1.1 7-2.5v-13M5 12c0 1.4 3.1 2.5 7 2.5s7-1.1 7-2.5"/></svg></i><h3 data-i="sv1t">Восстановление данных</h3><p data-i="sv1d">Из отзыва: доступ к данным вернули за 15 минут.</p></div><div class="tile reveal"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9V3h12v6"/><rect x="3" y="9" width="18" height="8" rx="1.5"/><path d="M7 14h10v7H7z"/></svg></i><h3 data-i="sv2t">Оргтехника</h3><p data-i="sv2d">Принтеры и другая офисная техника.</p></div><div class="tile reveal"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="5" cy="5" r="2.5"/><circle cx="19" cy="5" r="2.5"/><circle cx="5" cy="19" r="2.5"/><circle cx="19" cy="19" r="2.5"/><rect x="9" y="9" width="6" height="6" rx="1"/><path d="M7 7l2 2M17 7l-2 2M7 17l2-2M17 17l-2-2"/></svg></i><h3 data-i="sv3t">Дроны и стабилизаторы</h3><p data-i="sv3d">На фото — ремонт дронов и подвесов.</p></div><div class="tile reveal"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 16v-4l2-5h14l2 5v4"/><path d="M3 16h18v2H3z"/><circle cx="7" cy="16" r="1.6"/><circle cx="17" cy="16" r="1.6"/><path d="M5 12h14"/></svg></i><h3 data-i="sv4t">Самокаты и электромобили</h3><p data-i="sv4d">Электросамокаты, гироскутеры, детские электромобили.</p></div><div class="tile reveal"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 5.5a4 4 0 0 0 5 5L12 18l-3 3-3-3 3-3 7.5-7.5a4 4 0 0 1-2-2z"/></svg></i><h3 data-i="sv5t">Промышленное оборудование</h3><p data-i="sv5d">Ремонт промышленного оборудования — в рубриках 2GIS.</p></div></div>
+  
+</div></section>
+
+<section class="dark" id="why"><div class="wrap">
+  <span class="kicker reveal"><span data-i="wk">Почему мы</span></span>
+  <h2 data-i="wt" class="reveal">Когда техника ломается не по расписанию</h2>
+  <p data-i="wd" class="sub reveal">Pro Service работает круглосуточно. В отзывах — ночные истории: залитый чаем ноутбук, срочное восстановление данных. Мастера объясняют и предлагают оптимальное решение.</p>
+  <div class="facts"><div class="fact reveal"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></i><b data-i="ft0t">Круглосуточно</b><span data-i="ft0d">Можно приехать даже ночью — клиенты так и делают</span></div><div class="fact reveal"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-7 9 7"/><path d="M5 9.5V20h14V9.5"/><path d="M10 20v-6h4v6"/></svg></i><b data-i="ft1t">Выезд на дом</b><span data-i="ft1d">И доставка техники</span></div><div class="fact reveal"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v11H9l-5 4z"/></svg></i><b data-i="ft2t">Несколько языков</b><span data-i="ft2d">Клиент из отзыва: английский, китайский, турецкий и русский</span></div><div class="fact reveal"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg></i><b data-i="ft3t">Два филиала</b><span data-i="ft3d">Суюмбаева, 31 — и ещё один адрес в 2GIS</span></div></div>
+</div></section>
+
+<section><div class="wrap">
+  <span class="kicker reveal"><span data-i="pk">Как это работает</span></span>
+  <h2 data-i="pt" class="reveal">Три простых шага</h2>
+  <div class="steps"><div class="step reveal"><em>01</em><b data-i="sp0t">Напишите или приезжайте</b><span data-i="sp0d">Суюмбаева, 31, 2 этаж — в любое время суток.</span></div><div class="step reveal"><em>02</em><b data-i="sp1t">Диагностика</b><span data-i="sp1d">Найдём причину и согласуем стоимость.</span></div><div class="step reveal"><em>03</em><b data-i="sp2t">Ремонт и выдача</b><span data-i="sp2d">Заберёте сами или привезём — есть доставка.</span></div></div>
+</div></section>
+
+<section style="background:var(--bg)"><div class="wrap">
+  <span class="kicker reveal"><span data-i="gk">Фото</span></span>
+  <h2 data-i="gt" class="reveal">Что к нам приносят</h2>
+  <div class="gal" id="gal"></div>
+</div></section>
+
+<section id="reviews"><div class="wrap">
+  <span class="kicker reveal"><span data-i="rk">Отзывы</span></span>
+  <h2 data-i="rt" class="reveal">Что говорят клиенты</h2>
+  <p data-i="rc" class="sub reveal">4.7 — по 379 оценкам и 325 отзывам в 2GIS</p>
+  <div class="rvs"><figure class="rv reveal"><div class="stars">★★★★★</div><blockquote>«Ремонтировала здесь два ноутбука. Первый ноут по неосторожности залила чаем, а время было позднее, но к счастью в это время работал ПроСервис. Я сразу побежала туда, и мастер всё восстановил»</blockquote><figcaption><b>Aurelia</b><span>2GIS · ноябрь 2026</span></figcaption></figure><figure class="rv reveal"><div class="stars">★★★★★</div><blockquote>«Ночью мама позвонила и сказала что: -не получается открыть очень важные данные на ноутбуке, отвез ноутбук в "Pro Service Bishkek". Отличные ребята, справились за 15 минут и востановили доступ к данным..»</blockquote><figcaption><b>Моно Строй</b><span>2GIS · октябрь 2026</span></figcaption></figure><figure class="rv reveal"><div class="stars">★★★★★</div><blockquote>«Отличный сервис, ребята профессионалы. Приятно объясняют и предлагают оптимальное решение. Удачи в работе»</blockquote><figcaption><b>Тимур</b><span>2GIS · ноябрь 2026</span></figcaption></figure><figure class="rv reveal"><div class="stars">★★★★★</div><blockquote>«An excellent electronics repair service! They offer service in English, Chinese, Turkish, and Russian.»</blockquote><figcaption><b>Matvei</b><span>2GIS · сентябрь 2026</span></figcaption></figure></div>
+  <a class="more" href="https://2gis.kg/bishkek/firm/70000001054397812/tab/reviews" target="_blank" rel="noopener"><span data-i="ra">Все отзывы в 2GIS →</span></a>
+</div></section>
+
+<section id="book" style="background:var(--bg)"><div class="wrap book">
+  <div>
+    <span class="kicker"><span data-i="bk">Заявка</span></span>
+    <h2 data-i="bt">Опишите поломку</h2>
+    <p data-i="bs" class="sub">Заявка откроется в WhatsApp — мастер ответит и подскажет, что делать дальше. Стоимость называем после диагностики.</p>
+    <ul class="contact-list"><li><a href="tel:+996998000234"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A17 17 0 0 1 3 5a2 2 0 0 1 2-2"/></svg><div>+996 998 000 234<small data-i="c_phone">Телефон</small></div></a></li><li><a href="tel:+996708000234"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A17 17 0 0 1 3 5a2 2 0 0 1 2-2"/></svg><div>+996 708 000 234<small data-i="c_phone">Телефон</small></div></a></li><li><a class="wa" href="#" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 20.5l1.3-4.2A8.5 8.5 0 1 1 8 19.4z"/></svg><div>+996 998 000 234<small>WhatsApp</small></div></a></li><li><a href="https://wa.me/996708000234" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 20.5l1.3-4.2A8.5 8.5 0 1 1 8 19.4z"/></svg><div>+996 708 000 234<small>WhatsApp</small></div></a></li><li><a href="https://t.me/+996708000234" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 4L3 11l6 2 2 6 3-4 5 4z"/><path d="M9 13l9-7"/></svg><div>+996 708 000 234<small>Telegram</small></div></a></li><li><a href="https://instagram.com/proservice.bishkek" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor"/></svg><div>@proservice.bishkek<small>Instagram</small></div></a></li><li><div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg><div><span data-i="c_addr">ул. Ахматбека Суюмбаева, 31</span><small data-i="c_addr2">2 этаж, Свердловский район</small></div></div></li><li><div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><ul class="hours"><li><span><span data-i="hd0">Ежедневно</span></span><b><span data-i="ht0">круглосуточно</span></b></li></ul></div></li></ul>
+  </div>
+  <form id="form" class="reveal">
+  <label><span data-i="fm_name">Ваше имя</span><input name="name" required autocomplete="name"></label>
+  <label><span data-i="fm_phone">Телефон</span><input name="phone" type="tel" autocomplete="tel" placeholder="+996"></label>
+  <label><span data-i="fm_dev">Устройство и модель</span><input name="device" placeholder="Ноутбук Lenovo, принтер Epson…"></label>
+  <label><span data-i="fm_type">Что ремонтируем</span><select name="type"><option data-i="opt0">Ноутбук / ПК</option><option data-i="opt1">Восстановление данных</option><option data-i="opt2">Принтер</option><option data-i="opt3">Дрон</option><option data-i="opt4">Самокат / электромобиль</option><option data-i="opt5">Другое</option></select></label>
+  <button class="btn btn-main" type="submit"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.4.6-.3.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.7-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.4Z"/></svg><span data-i="fm_send">Отправить в WhatsApp</span></button>
+  <p data-i="fm_note" class="form-note">Заявка откроется в WhatsApp — ни к чему не обязывает.</p>
+</form>
+</div></section>
+<iframe class="map" loading="lazy" title="Карта" src="https://www.openstreetmap.org/export/embed.html?bbox=74.6163%2C42.8657%2C74.6323%2C42.8737&layer=mapnik&marker=42.869719%2C74.62428"></iframe>
+<footer><div class="wrap">
+  <div class="foot"><span class="logo"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="4.5" y="4.5" width="15" height="10" rx="1"/><path d="M2 18h20l-1.5-3.5h-17z"/></svg></i>Pro Service</span>
+  <a href="https://2gis.kg/bishkek/firm/70000001054397812" target="_blank" rel="noopener"><span data-i="o2">Открыть в 2GIS →</span></a></div>
+  <p data-i="demo" class="demo">Демо-концепт сайта, подготовлен на основе открытых данных 2GIS. Не является официальным сайтом компании — удалим по первой просьбе.</p>
+</div></footer>
+<div class="mbar"><a class="btn btn-ghost" href="tel:+996998000234"><span data-i="mc">Позвонить</span></a><a class="btn btn-main wa" href="#" target="_blank" rel="noopener">WhatsApp</a></div>
+<div class="lb" id="lb"><button class="x" aria-label="Закрыть">✕</button><button class="pv" aria-label="Назад">‹</button><img alt=""><button class="nx" aria-label="Вперёд">›</button></div><script>
+const T={"ru": {"n1": "Ремонт", "n2": "Почему мы", "n3": "Отзывы", "n4": "Контакты", "hc0": "круглосуточно", "hc1": "рейтинг 2GIS", "hc2": "оценок", "sv0t": "Ноутбуки и ПК", "sv0d": "Ремонт, апгрейд, восстановление после залития.", "sv1t": "Восстановление данных", "sv1d": "Из отзыва: доступ к данным вернули за 15 минут.", "sv2t": "Оргтехника", "sv2d": "Принтеры и другая офисная техника.", "sv3t": "Дроны и стабилизаторы", "sv3d": "На фото — ремонт дронов и подвесов.", "sv4t": "Самокаты и электромобили", "sv4d": "Электросамокаты, гироскутеры, детские электромобили.", "sv5t": "Промышленное оборудование", "sv5d": "Ремонт промышленного оборудования — в рубриках 2GIS.", "ft0t": "Круглосуточно", "ft0d": "Можно приехать даже ночью — клиенты так и делают", "ft1t": "Выезд на дом", "ft1d": "И доставка техники", "ft2t": "Несколько языков", "ft2d": "Клиент из отзыва: английский, китайский, турецкий и русский", "ft3t": "Два филиала", "ft3d": "Суюмбаева, 31 — и ещё один адрес в 2GIS", "sp0t": "Напишите или приезжайте", "sp0d": "Суюмбаева, 31, 2 этаж — в любое время суток.", "sp1t": "Диагностика", "sp1d": "Найдём причину и согласуем стоимость.", "sp2t": "Ремонт и выдача", "sp2d": "Заберёте сами или привезём — есть доставка.", "hk": "Работаем круглосуточно", "h1": "Ремонт ноутбуков и техники <em>24/7</em>", "hs": "Ноутбуки и компьютеры, восстановление данных, оргтехника, дроны и самокаты. Выезд на дом и доставка.", "c1": "Описать поломку", "sk": "Ремонт", "st": "Что ремонтируем", "ss": "От ноутбука до детского электромобиля.", "wk": "Почему мы", "wt": "Когда техника ломается не по расписанию", "wd": "Pro Service работает круглосуточно. В отзывах — ночные истории: залитый чаем ноутбук, срочное восстановление данных. Мастера объясняют и предлагают оптимальное решение.", "pk": "Как это работает", "pt": "Три простых шага", "gk": "Фото", "gt": "Что к нам приносят", "rk": "Отзывы", "rt": "Что говорят клиенты", "rc": "4.7 — по 379 оценкам и 325 отзывам в 2GIS", "ra": "Все отзывы в 2GIS →", "bk": "Заявка", "bt": "Опишите поломку", "bs": "Заявка откроется в WhatsApp — мастер ответит и подскажет, что делать дальше. Стоимость называем после диагностики.", "c_phone": "Телефон", "c_addr": "ул. Ахматбека Суюмбаева, 31", "c_addr2": "2 этаж, Свердловский район", "hd0": "Ежедневно", "ht0": "круглосуточно", "fm_dev": "Устройство и модель", "opt0": "Ноутбук / ПК", "opt1": "Восстановление данных", "opt2": "Принтер", "opt3": "Дрон", "opt4": "Самокат / электромобиль", "opt5": "Другое", "fm_name": "Ваше имя", "fm_phone": "Телефон", "fm_type": "Что ремонтируем", "fm_send": "Отправить в WhatsApp", "fm_note": "Заявка откроется в WhatsApp — ни к чему не обязывает.", "o2": "Открыть в 2GIS →", "demo": "Демо-концепт сайта, подготовлен на основе открытых данных 2GIS. Не является официальным сайтом компании — удалим по первой просьбе.", "mc": "Позвонить", "wa_hello": "Здравствуйте! Пишу с сайта Pro Service.", "wa_lead": "Здравствуйте! Заявка с сайта Pro Service."}, "ky": {"n1": "Оңдоо", "n2": "Эмне үчүн биз", "n3": "Пикирлер", "n4": "Байланыш", "hc0": "күнү-түнү", "hc1": "2GIS рейтинги", "hc2": "баа", "sv0t": "Ноутбуктар жана ПК", "sv0d": "Оңдоо, апгрейд, суу тийгенден кийин калыбына келтирүү.", "sv1t": "Маалыматтарды калыбына келтирүү", "sv1d": "Пикирден: маалыматка жетүүнү 15 мүнөттө кайтарышкан.", "sv2t": "Кеңсе техникасы", "sv2d": "Принтерлер жана башка кеңсе техникасы.", "sv3t": "Дрондор жана стабилизаторлор", "sv3d": "Сүрөттө — дрондорду жана подвестерди оңдоо.", "sv4t": "Самокаттар жана электромобилдер", "sv4d": "Электросамокаттар, гироскутерлер, балдардын электромобилдери.", "sv5t": "Өнөр жай жабдуулары", "sv5d": "Өнөр жай жабдууларын оңдоо — 2GIS рубрикаларында.", "ft0t": "Күнү-түнү", "ft0d": "Түнкүсүн да келсе болот — кардарлар ушундай кылышат", "ft1t": "Үйгө баруу", "ft1d": "Жана техниканы жеткирүү", "ft2t": "Бир нече тил", "ft2d": "Пикирдеги кардар: англис, кытай, түрк жана орус тилдери", "ft3t": "Эки филиал", "ft3d": "Суюмбаев, 31 — жана 2GISте дагы бир дарек", "sp0t": "Жазыңыз же келиңиз", "sp0d": "Суюмбаев, 31, 2-кабат — сутканын каалаган убагында.", "sp1t": "Диагностика", "sp1d": "Себебин таап, баасын макулдашабыз.", "sp2t": "Оңдоо жана берүү", "sp2d": "Өзүңүз аласыз же жеткиребиз — жеткирүү бар.", "hk": "Күнү-түнү иштейбиз", "h1": "Ноутбуктарды жана техниканы оңдоо <em>24/7</em>", "hs": "Ноутбуктар жана компьютерлер, маалыматтарды калыбына келтирүү, кеңсе техникасы, дрондор жана самокаттар. Үйгө баруу жана жеткирүү.", "c1": "Бузулууну жазуу", "sk": "Оңдоо", "st": "Эмнени оңдойбуз", "ss": "Ноутбуктан балдардын электромобилине чейин.", "wk": "Эмне үчүн биз", "wt": "Техника күтүүсүз бузулганда", "wd": "Pro Service күнү-түнү иштейт. Пикирлерде — түнкү окуялар: чай төгүлгөн ноутбук, шашылыш маалымат калыбына келтирүү. Усталар түшүндүрүп, оптималдуу чечим сунушташат.", "pk": "Кантип иштейт", "pt": "Үч жөнөкөй кадам", "gk": "Сүрөттөр", "gt": "Бизге эмне алып келишет", "rk": "Пикирлер", "rt": "Кардарлар эмне дешет", "rc": "4.7 — 2GISтеги 379 баа жана 325 пикир боюнча", "ra": "2GISтеги бардык пикирлер →", "bk": "Арыз", "bt": "Бузулууну сүрөттөп бериңиз", "bs": "Арыз WhatsAppта ачылат — уста жооп берип, эмне кылуу керектигин айтат. Баасын диагностикадан кийин айтабыз.", "c_phone": "Телефон", "c_addr": "Ахматбек Суюмбаев көч., 31", "c_addr2": "2-кабат, Свердлов району", "hd0": "Күн сайын", "ht0": "күнү-түнү", "fm_dev": "Түзмөк жана модели", "opt0": "Ноутбук / ПК", "opt1": "Маалыматтарды калыбына келтирүү", "opt2": "Принтер", "opt3": "Дрон", "opt4": "Самокат / электромобиль", "opt5": "Башка", "fm_name": "Атыңыз", "fm_phone": "Телефон", "fm_type": "Эмнени оңдойбуз", "fm_send": "WhatsAppка жөнөтүү", "fm_note": "Арыз WhatsAppта ачылат — эч нерсеге милдеттендирбейт.", "o2": "2GISте ачуу →", "demo": "Бул 2GISтин ачык маалыматтарынын негизинде даярдалган демо-концепт. Компаниянын расмий сайты эмес — биринчи өтүнүч боюнча өчүрөбүз.", "mc": "Чалуу", "wa_hello": "Саламатсызбы! Pro Service сайтынан жазып жатам.", "wa_lead": "Саламатсызбы! Pro Service сайтынан арыз."}}, WA='996998000234', NAME='Pro Service', NG=17;
+let L='ru';try{L=localStorage.getItem('lang')||'ru'}catch(e){}
+function apply(l){if(!T[l])l='ru';L=l;document.documentElement.lang=l==='ky'?'ky':'ru';
+ document.querySelectorAll('[data-i]').forEach(e=>{const v=T[l][e.dataset.i];if(typeof v==='string')e.innerHTML=v});
+ document.querySelectorAll('[data-ph]').forEach(e=>{const v=T[l][e.dataset.ph];if(v)e.placeholder=v});
+ document.querySelectorAll('.lang button').forEach(b=>b.classList.toggle('on',b.dataset.l===l));
+ document.querySelectorAll('a.wa').forEach(a=>a.href=`https://wa.me/${WA}?text=${encodeURIComponent(T[l].wa_hello)}`);
+ try{localStorage.setItem('lang',l)}catch(e){}}
+document.querySelectorAll('.lang button').forEach(b=>b.onclick=()=>apply(b.dataset.l));
+apply(L);
+const form=document.getElementById('form');
+if(form)form.addEventListener('submit',e=>{e.preventDefault();
+ const lines=[T[L].wa_lead];
+ form.querySelectorAll('[name]').forEach(el=>{if(!el.value)return;const lab=el.closest('label').querySelector('[data-i]');lines.push(`${lab?lab.textContent.replace(/\s*\(.*\)$/,''):el.name}: ${el.value}`)});
+ window.open(`https://wa.me/${WA}?text=${encodeURIComponent(lines.join('\n'))}`,'_blank');});
+const imgs=[...Array(NG)].map((_,i)=>`img/g-${String(i+1).padStart(2,'0')}.jpg`);
+const gal=document.getElementById('gal');
+if(gal)imgs.forEach((src,i)=>{const b=document.createElement('button');b.type='button';b.innerHTML=`<img src="${src}" loading="lazy" alt="${NAME} — фото ${i+1}">`;b.onclick=()=>open(i);gal.appendChild(b)});
+const lb=document.getElementById('lb'),lbi=lb.querySelector('img');let cur=0;
+function open(i){cur=(i+imgs.length)%imgs.length;lbi.src=imgs[cur];lb.classList.add('on')}
+lb.querySelector('.x').onclick=()=>lb.classList.remove('on');
+lb.querySelector('.pv').onclick=e=>{e.stopPropagation();open(cur-1)};
+lb.querySelector('.nx').onclick=e=>{e.stopPropagation();open(cur+1)};
+lb.onclick=e=>{if(e.target===lb)lb.classList.remove('on')};
+addEventListener('keydown',e=>{if(!lb.classList.contains('on'))return;if(e.key==='Escape')lb.classList.remove('on');if(e.key==='ArrowLeft')open(cur-1);if(e.key==='ArrowRight')open(cur+1)});
+const h=document.getElementById('hdr');addEventListener('scroll',()=>h.classList.toggle('solid',scrollY>40),{passive:true});
+const io=new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}}),{threshold:.1});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
